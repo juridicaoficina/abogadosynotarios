@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <script type="text/javascript">
         var gk_isXlsx = false;
         var gk_xlsxFileLookup = {};
@@ -38,38 +37,34 @@
         }
         return gk_fileData[filename] || "";
         }
-        </script><!doctype html>
+        </script><!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Bufete Jurídico DIÉGUEZ, LEMUS & Asociados</title>
-  <meta name="description" content="Bufete Jurídico DIÉGUEZ, LEMUS & Asociados - Abogados y Notarios en Guatemala">
-  <meta name="keywords" content="bufete jurídico, abogados, notarios, Guatemala, derecho civil, derecho penal, derecho laboral, derecho corporativo, derecho de familia">
-  <meta name="author" content="Bufete Jurídico DIÉGUEZ, LEMUS & Asociados">
-  <link rel="canonical" href="https://juridicaoficina.github.io/abogadosynotarios/">
-  <!-- Open Graph -->
-  <meta property="og:title" content="Bufete Jurídico DIÉGUEZ, LEMUS & Asociados">
-  <meta property="og:description" content="Asesoría legal integral en Derecho Civil, Penal, Laboral, Corporativo, Notarial y de Familia en Guatemala.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.bufetejuridicodieguezlemus.com">
-  <meta property="og:image" content="/img/logo.png">
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Bufete Jurídico DIÉGUEZ, LEMUS & Asociados">
-  <meta name="twitter:description" content="Asesoría legal integral en Guatemala.">
-  <meta name="twitter:image" content="/img/logo.png">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://cdn.sheetjs.com/xlsx-latest/xlsx.full.min.js"></script>
-  <style>
-    /* Set blue/cyan gradient background for the entire page */
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>Bufete Jurídico DIÉGUEZ, LEMUS &amp; Asociados</title>
+<meta content="Bufete Jurídico DIÉGUEZ, LEMUS &amp; Asociados - Abogados y Notarios en Guatemala" name="description"/>
+<meta content="bufete jurídico, abogados, notarios, Guatemala, derecho civil, derecho penal, derecho laboral, derecho corporativo, derecho de familia" name="keywords"/>
+<meta content="Bufete Jurídico DIÉGUEZ, LEMUS &amp; Asociados" name="author"/>
+<link href="https://juridicaoficina.github.io/abogadosynotarios/" rel="canonical"/>
+<!-- Open Graph -->
+<meta content="Bufete Jurídico DIÉGUEZ, LEMUS &amp; Asociados" property="og:title"/>
+<meta content="Asesoría legal integral en Derecho Civil, Penal, Laboral, Corporativo, Notarial y de Familia en Guatemala." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://www.bufetejuridicodieguezlemus.com" property="og:url"/>
+<meta content="/img/logo.png" property="og:image"/>
+<!-- Twitter Card -->
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Bufete Jurídico DIÉGUEZ, LEMUS &amp; Asociados" name="twitter:title"/>
+<meta content="Asesoría legal integral en Guatemala." name="twitter:description"/>
+<meta content="/img/logo.png" name="twitter:image"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
     body {
       background: linear-gradient(-45deg, #0284c7, #22d3ee, #0ea5e9, #1e40af);
       background-size: 400% 400%;
       animation: gradient 20s ease infinite;
     }
-
-    /* Card interaction: modern hover (subida/zoom + sombra) */
     .card {
       transition: transform .28s cubic-bezier(.2,.9,.2,1), box-shadow .28s cubic-bezier(.2,.9,.2,1), filter .28s;
       will-change: transform, box-shadow, filter;
@@ -85,25 +80,18 @@
     .card:focus { 
       box-shadow: 0 10px 30px rgba(2,6,23,0.12), 0 0 0 4px rgba(34,197,94,0.06); 
     }
-    
-    /* Smooth scroll */
     html {
       scroll-behavior: smooth;
     }
-    
-    /* Hero gradient animation */
     @keyframes gradient {
       0% { background-position: 0% 50%; }
       100% { background-position: 400% 50%; }
     }
-    
     .hero-gradient {
       background: linear-gradient(-45deg, #0f766e, #14b8a6, #0d9488, #115e59);
       background-size: 400% 400%;
       animation: gradient 20s ease infinite;
     }
-    
-    /* Map container */
     .map-container {
       position: relative;
       width: 100%;
@@ -111,8 +99,6 @@
       border-radius: 0.5rem;
       overflow: hidden;
     }
-
-    /* Back to Top button */
     .back-to-top {
       position: fixed;
       bottom: 20px;
@@ -128,18 +114,76 @@
     .back-to-top.show {
       display: block;
     }
-
-    /* Mobile menu animation */
     #mobile-menu {
-      transition: transform 0.3s ease-in-out;
+      display: none; /* Estado inicial explícito */
+      transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+      opacity: 0;
       transform: translateY(-100%);
     }
     #mobile-menu:not(.hidden) {
+      display: block; /* Mostrar cuando no tiene clase hidden */
       transform: translateY(0);
+      opacity: 1;
     }
-  </style>
-  <!-- JSON-LD Structured Data -->
-  <script type="application/ld+json">
+    header svg {
+      width: 56px;
+      height: 56px;
+      display: block;
+    }
+    @media (min-width: 1024px) {
+      header svg {
+        width: 64px;
+        height: 64px;
+      }
+    }
+    .section-bg-overlay::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+    .section-bg-overlay {
+      position: relative;
+      background-size: cover;
+      background-position: center;
+    }
+    .section-bg-overlay > * {
+      position: relative;
+      z-index: 2;
+    }
+    .section-bg-overlay.no-bg {
+      background: linear-gradient(135deg, #e2e8f0, #f1f5f9);
+    }
+    .contact-form input,
+    .contact-form textarea {
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      border-color: #0f766e;
+      box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.1);
+    }
+    .contact-form label {
+      font-weight: 600;
+      color: #1e293b;
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+    .contact-form button {
+      background: linear-gradient(to right, #0f766e, #14b8a6);
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+    .contact-form button:hover {
+      background: linear-gradient(to right, #0d9488, #115e59);
+      transform: translateY(-2px);
+    }
+</style>
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
@@ -163,554 +207,472 @@
         "availableLanguage": "Spanish"
       }
     }
-  </script>
+</script>
 </head>
 <body class="antialiased text-slate-800">
-  <!-- HEADER -->
-  <header class="bg-white shadow sticky top-0 z-40" role="banner">
-    <div class="max-w-6xl mx-auto px-3 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-16">
-        <a href="#inicio" class="flex items-center gap-3 hover:opacity-80 transition-opacity">
-          <!-- Logo: balanza estilizada -->
-          <svg width="48" height="48" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" loading="lazy">
-            <rect width="64" height="64" rx="10" fill="#0f172a" />
-            <path d="M32 12v8" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
-            <path d="M16 26h32" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
-            <path d="M22 26c0 6 6 10 10 10s10-4 10-10" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
-          </svg>
-          <div>
-            <div class="text-xs text-slate-500">ABOGADOS Y NOTARIOS EN GUATEMALA</div>
-            <div class="text-base sm:text-lg font-semibold">Bufete Jurídico</div>
-            <div class="text-xs text-slate-500">DIÉGUEZ, LEMUS &amp; Asociados</div>
-          </div>
-        </a>
-
-        <nav class="hidden md:flex items-center gap-4 text-sm text-slate-700" role="navigation">
-          <a href="#nosotros" class="hover:text-teal-700 transition-colors py-2 px-3">Nosotros</a>
-          <a href="#servicios" class="hover:text-teal-700 transition-colors py-2 px-3">Servicios</a>
-          <a href="#equipo" class="hover:text-teal-700 transition-colors py-2 px-3">Equipo</a>
-          <a href="#blog" class="hover:text-teal-700 transition-colors py-2 px-3">Blog</a>
-          <a href="#contacto" class="hover:text-teal-700 transition-colors py-2 px-3">Contacto</a>
-          <a href="#llegar" class="hover:text-teal-700 transition-colors py-2 px-3">Cómo llegar</a>
-        </nav>
-
-        <div class="md:hidden">
-          <button id="btn-mobile" class="p-3 rounded-md hover:bg-slate-100 transition-colors" aria-label="Abrir menú" aria-expanded="false">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 6h16M4 12h16M4 18h16" stroke="#0f172a" stroke-width="1.5" stroke-linecap="round"/></svg>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <!-- mobile menu -->
-    <div id="mobile-menu" class="md:hidden hidden border-t bg-white absolute w-full z-50" role="navigation">
-      <div class="px-3 py-4 flex flex-col gap-3 text-base">
-        <a href="#nosotros" class="block py-3 px-4 hover:text-teal-700 transition-colors rounded-md hover:bg-teal-50">Nosotros</a>
-        <a href="#servicios" class="block py-3 px-4 hover:text-teal-700 transition-colors rounded-md hover:bg-teal-50">Servicios</a>
-        <a href="#equipo" class="block py-3 px-4 hover:text-teal-700 transition-colors rounded-md hover:bg-teal-50">Equipo</a>
-        <a href="#blog" class="block py-3 px-4 hover:text-teal-700 transition-colors rounded-md hover:bg-teal-50">Blog</a>
-        <a href="#contacto" class="block py-3 px-4 hover:text-teal-700 transition-colors rounded-md hover:bg-teal-50">Contacto</a>
-        <a href="#llegar" class="block py-3 px-4 hover:text-teal-700 transition-colors rounded-md hover:bg-teal-50">Cómo llegar</a>
-      </div>
-    </div>
-  </header>
-
-  <!-- HERO -->
-  <main id="inicio" role="main">
-    <section class="hero-gradient text-white py-12 sm:py-16">
-      <div class="max-w-6xl mx-auto px-3 sm:px-6 lg:px-8 grid sm:grid-cols-2 gap-6 items-center">
-        <div>
-          <h1 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold leading-tight">Bufete Jurídico DIÉGUEZ, LEMUS &amp; Asociados</h1>
-          <p class="mt-4 text-base sm:text-lg text-teal-100">Asesoría legal integral en Derecho Civil, Penal, Laboral, Corporativo, Notarial y de Familia. Acompañamiento humano, honesto y personalizado.</p>
-          <div class="mt-6 flex gap-4 flex-wrap">
-            <a href="#contacto" class="px-5 py-3 bg-white text-teal-800 rounded-md font-semibold hover:bg-teal-50 transition-colors min-w-[120px] text-center">Contáctenos</a>
-            <a href="#servicios" class="px-5 py-3 border border-white/40 rounded-md hover:bg-white/10 transition-colors min-w-[120px] text-center">Ver servicios</a>
-            <a href="https://www.facebook.com/Accesolegal" target="_blank" rel="noopener noreferrer" class="text-teal-700 hover:underline text-sm sm:text-base">Síguenos en Facebook</a>      
-          </div>
-        </div>
-        <div class="bg-white/10 backdrop-blur-sm p-5 rounded-lg card border border-white/20" tabindex="0">
-          <h3 class="text-white font-semibold text-base sm:text-lg">Horario de atención presencial</h3>
-          <p class="mt-3 text-teal-50 text-sm sm:text-base">📅 Lunes - Viernes: 8:30 - 15:30</p>
-          <p class="mt-2 text-teal-50 text-sm sm:text-base">📞 Tel: <a href="tel:+50234044894" class="underline hover:text-white transition-colors">3404-4894</a></p>
-          <p class="mt-2 text-teal-50 text-sm sm:text-base">💬 <a href="https://wa.me/50234044894" target="_blank" rel="noopener noreferrer" class="underline hover:text-white transition-colors">WhatsApp</a></p>
-        </div>
-      </div>
-    </section>
-
-    <!-- NOSOTROS -->
-    <section id="nosotros" class="max-w-6xl mx-auto px-3 sm:px-6 py-12 sm:py-16">
-      <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-teal-900">NOSOTROS</h2>
-      <div class="prose max-w-none text-slate-800 leading-relaxed">
-        <p class="text-base sm:text-lg">Somos un equipo de Profesionales de las Ciencias Jurídicas y Sociales, Abogados y Notarios egresados de la Facultad de Derecho de la Tricentenaria Universidad de San Carlos de Guatemala, con amplia trayectoria en las diferentes áreas del derecho penal, civil, laboral, corporativo, notarial y de familia. Brindamos asesoría jurídica y acompañamiento humano, honesto y personalizado, ya sea de forma individual o corporativa.</p>
-      </div>
-    </section>
-
-    <!-- SERVICIOS -->
-    <section id="servicios" class="bg-white border-t py-12 sm:py-16">
-      <div class="max-w-6xl mx-auto px-3 sm:px-6">
-        <h2 class="text-2xl sm:text-3xl font-bold text-teal-900 mb-6 sm:mb-8">SERVICIOS</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-          <article class="p-5 rounded-lg border-2 border-blue-200 bg-gradient-to-br from-blue-50 to-blue-100 card" tabindex="0">
-            <div class="text-3xl mb-3">⚖️</div>
-            <h3 class="font-bold text-lg sm:text-xl text-blue-900 mb-3">Derecho Civil</h3>
-            <p class="text-sm text-slate-800 leading-relaxed">Cobro judicial, desocupaciones, reclamos de propiedad, escrituras, contratos, herencias, legados, intestados, testamentarios, donaciones, obligaciones y más.</p>
-          </article>
-
-          <article class="p-5 rounded-lg border-2 border-green-200 bg-gradient-to-br from-green-50 to-green-100 card" tabindex="0">
-            <div class="text-3xl mb-3">🛡️</div>
-            <h3 class="font-bold text-lg sm:text-xl text-green-900 mb-3">Derecho Penal</h3>
-            <p class="text-sm text-slate-800 leading-relaxed">Defensa en proceso penal, asesoría ante Juzgados, Tribunales y Ministerio Público, redención de penas, rehabilitación de antecedentes y más.</p>
-          </article>
-
-          <article class="p-5 rounded-lg border-2 border-yellow-200 bg-gradient-to-br from-yellow-50 to-yellow-100 card" tabindex="0">
-            <div class="text-3xl mb-3">👨‍👩‍👧‍👦</div>
-            <h3 class="font-bold text-lg sm:text-xl text-yellow-900 mb-3">Derecho de Familia</h3>
-            <p class="text-sm text-slate-800 leading-relaxed">Divorcios, patrimonio conyugal, alimentos, custodia, filiación, matrimonio, unión de hecho, reconocimiento de hijos, relaciones familiares, patria potestad, violencia intrafamiliar, etc.</p>
-          </article>
-
-          <article class="p-5 rounded-lg border-2 border-purple-200 bg-gradient-to-br from-purple-50 to-purple-100 card" tabindex="0">
-            <div class="text-3xl mb-3">🏢</div>
-            <h3 class="font-bold text-lg sm:text-xl text-purple-900 mb-3">Derecho Corporativo</h3>
-            <p class="text-sm text-slate-800 leading-relaxed">Constitución de Sociedades, asesoría y representación empresarial, empresas y contratos mercantiles, relaciones laborales, asociaciones, etc.</p>
-          </article>
-
-          <article class="p-5 rounded-lg border-2 border-pink-200 bg-gradient-to-br from-pink-50 to-pink-100 card" tabindex="0">
-            <div class="text-3xl mb-3">💼</div>
-            <h3 class="font-bold text-lg sm:text-xl text-pink-900 mb-3">Derecho Laboral</h3>
-            <p class="text-sm text-slate-800 leading-relaxed">Asesoría por denuncia y cobro de indemnización y prestaciones, juicio por despido injustificado, pensiones, jubilaciones, incidentes post mortem y previsión social.</p>
-          </article>
-
-          <article class="p-5 rounded-lg border-2 border-teal-200 bg-gradient-to-br from-teal-50 to-teal-100 card" tabindex="0">
-            <div class="text-3xl mb-3">🤝</div>
-            <h3 class="font-bold text-lg sm:text-xl text-teal-900 mb-3">Gestiones Alternativas</h3>
-            <p class="text-sm text-slate-800 leading-relaxed">Gestiones extrajudiciales, orientación legal, diagnóstico jurídico, solución de conflictos, mediaciones, defensa y representación judicial, impugnaciones, amparos, exhibición personal.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- EQUIPO -->
-    <section id="equipo" class="max-w-6xl mx-auto px-3 sm:px-6 py-12 sm:py-16">
-      <h2 class="text-2xl sm:text-3xl font-bold text-teal-900 mb-6 sm:mb-8">NUESTRO EQUIPO</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 sm:gap-6">
-        <div class="p-5 rounded-lg border-2 border-slate-200 bg-white card shadow-sm" tabindex="0">
-          <div class="flex items-start gap-4 min-w-0">
-            <div class="w-16 h-16 bg-teal-600 rounded-full flex items-center justify-center text-white text-xl sm:text-2xl font-bold flex-shrink-0">AD</div>
-            <div class="flex-1 min-w-0">
-              <h4 class="font-bold text-base sm:text-lg text-slate-900 truncate">Lic. Arnulfo Diéguez</h4>
-              <p class="text-sm text-slate-600 font-semibold mt-1">Abogado y Notario</p>
-              <p class="text-sm text-teal-700 font-semibold mt-1">Colegiado activo Nº 11,340</p>
-              <p class="text-sm text-slate-600 mt-2">Especialización: Derecho Civil y Procesal Civil y Mercantil • Más de 15 años de ejercicio profesional</p>
-              <div class="mt-4 space-y-1 text-sm">
-                <p>📧 <a href="mailto:licdieguez43@gmail.com" class="text-teal-700 hover:underline">licdieguez43@gmail.com</a></p>
-                <p>📱 <a href="tel:+50249380267" class="text-teal-700 hover:underline">4938-0267</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="p-5 rounded-lg border-2 border-amber-200 bg-amber-50 card shadow-sm" tabindex="0">
-          <div class="flex items-start gap-4 min-w-0">
-            <div class="w-16 h-16 bg-amber-600 rounded-full flex items-center justify-center text-white text-xl sm:text-2xl font-bold flex-shrink-0">AL</div>
-            <div class="flex-1 min-w-0">
-              <h4 class="font-bold text-base sm:text-lg text-slate-900 truncate">Lic. Alfredo Lemus</h4>
-              <p class="text-sm text-slate-600 font-semibold mt-1">Abogado y Notario</p>
-              <p class="text-sm text-amber-700 font-semibold mt-1">Colegiado activo Nº 11,318</p>
-              <p class="text-sm text-slate-600 mt-2">Especialización: Derecho Notarial y Jurisdicción Voluntaria • Más de 15 años de ejercicio profesional</p>
-              <div class="mt-4 space-y-1 text-sm">
-                <p>📧 <a href="mailto:licjalemus63@gmail.com" class="text-amber-700 hover:underline">licjalemus63@gmail.com</a></p>
-                <p>📱 <a href="tel:+50255972975" class="text-amber-700 hover:underline">5597-2975</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="p-5 rounded-lg border-2 border-emerald-200 bg-emerald-50 card shadow-sm" tabindex="0">
-          <div class="flex items-start gap-4 min-w-0">
-            <div class="w-16 h-16 bg-emerald-600 rounded-full flex items-center justify-center text-white text-xl sm:text-2xl font-bold flex-shrink-0">RP</div>
-            <div class="flex-1 min-w-0">
-              <h4 class="font-bold text-base sm:text-lg text-slate-900 truncate">Licda. Rosalva Pajoc González</h4>
-              <p class="text-sm text-slate-600 font-semibold mt-1">Abogada y Notaria</p>
-              <p class="text-sm text-emerald-700 font-semibold mt-1">Colegiada activa Nº 11,899</p>
-              <p class="text-sm text-slate-600 mt-2">Especialización: Derecho Penal • Más de 12 años de ejercicio profesional</p>
-              <div class="mt-4 space-y-1 text-sm">
-                <p>📧 <a href="mailto:nuevavidars@gmail.com" class="text-emerald-700 hover:underline">nuevavidars@gmail.com</a></p>
-                <p>📱 <a href="tel:+50242846646" class="text-emerald-700 hover:underline">4284-6646</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="p-5 rounded-lg border-2 border-rose-200 bg-rose-50 card shadow-sm" tabindex="0">
-          <div class="flex items-start gap-4 min-w-0">
-            <div class="w-16 h-16 bg-rose-600 rounded-full flex items-center justify-center text-white text-xl sm:text-2xl font-bold flex-shrink-0">EB</div>
-            <div class="flex-1 min-w-0">
-              <h4 class="font-bold text-base sm:text-lg text-slate-900 truncate">Lic. Erick Salvador Barillas</h4>
-              <p class="text-sm text-slate-600 font-semibold mt-1">Abogado y Notario</p>
-              <p class="text-sm text-rose-700 font-semibold mt-1">Colegiado activo Nº 18,034</p>
-              <p class="text-sm text-slate-600 mt-2">Especialización: Derecho de Familia e impugnaciones • 12 años de ejercicio profesional</p>
-              <div class="mt-4 space-y-1 text-sm">
-                <p>📧 <a href="mailto:lic.barillas46@gmail.com" class="text-rose-700 hover:underline">lic.barillas46@gmail.com</a></p>
-                <p>📱 <a href="tel:+50234950705" class="text-rose-700 hover:underline">3495-0705</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- BLOG -->
-    <section id="blog" class="bg-white border-t py-12 sm:py-16">
-      <div class="max-w-6xl mx-auto px-3 sm:px-6">
-        <h2 class="text-2xl sm:text-3xl font-bold text-teal-900 mb-6 sm:mb-8">BLOG</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-          <article class="p-5 rounded-lg border-2 border-blue-200 bg-blue-50 card" tabindex="0">
-            <h3 class="font-bold text-lg sm:text-xl text-blue-900 mb-3">LA PROPIEDAD Y LA SUCESIÓN</h3>
-            <p class="text-sm text-slate-800 leading-relaxed">La propiedad es el derecho que una persona tiene para poseer, usar, gozar, disfrutar y disponer de un bien de acuerdo con la ley. La sucesión hereditaria es el proceso legal de transmisión de bienes, derechos y obligaciones de una persona fallecida a sus herederos, basado en la voluntad del testador (sucesión testamentaria) o en la ley (sucesión intestada).</p>
-          </article>
-
-          <article class="p-5 rounded-lg border-2 border-orange-200 bg-orange-50 card" tabindex="0">
-            <h3 class="font-bold text-lg sm:text-xl text-orange-900 mb-3">EL DIVORCIO Y LA SEPARACIÓN</h3>
-            <p class="text-sm text-slate-800 leading-relaxed">El divorcio es la disolución del vínculo matrimonial. La separación es la interrupción de hecho de la relación conyugal. Pueden ser de MUTUO ACUERDO; los cónyuges lo consienten y colaboran en su trámite judicial hasta la sentencia y CONTENCIOSO EN JUICIO ORAL; uno de los cónyuges promueve su trámite judicial hasta obtener la sentencia, en base a las causales dispuestas en el Artículo 155 del Código Civil.</p>
-          </article>
-
-          <article class="p-5 rounded-lg border-2 border-amber-200 bg-amber-50 card" tabindex="0">
-            <h3 class="font-bold text-lg sm:text-xl text-amber-900 mb-3">LOS ALIMENTOS Y LA VIOLENCIA INTRAFAMILIAR</h3>
-            <p class="text-sm text-slate-800 leading-relaxed">Los alimentos son todo lo indispensable para el sustento, habitación, vestido, asistencia médica y la educación e instrucción del alimentista. En el JUICIO DE ALIMENTOS se establece su fijación, su aumento o disminución. La violencia intrafamiliar es toda acción u omisión cometida por algún miembro de la familia en relación de poder, sin importar el espacio físico donde ocurra, que perjudique el bienestar, la integridad física, psicológica, la libertad o el derecho de otro miembro de la familia.</p>
-          </article>
-
-          <article class="p-5 rounded-lg border-2 border-violet-200 bg-violet-50 card" tabindex="0">
-            <h3 class="font-bold text-lg sm:text-xl text-violet-900 mb-3">LA APREHENSIÓN Y EL PROCESO PENAL</h3>
-            <p class="text-sm text-slate-800 leading-relaxed">La aprehensión es el acto legal que limita la libertad de locomoción de una persona al vincularla con un ilícito penal, con el fin de ponerlo a disposición de la justicia para la continuación del posible proceso penal. El proceso penal es el procedimiento por el cual se investigan hechos delictivos, se determina la participación y responsabilidad del sindicado mediante la desjudicialización o las etapas conocidas como preparatoria, intermedia y de juicio.</p>
-          </article>
-
-          <article class="p-5 rounded-lg border-2 border-emerald-200 bg-emerald-50 card" tabindex="0">
-            <h3 class="font-bold text-lg sm:text-xl text-emerald-900 mb-3">LA INDEMNIZACIÓN Y LAS PRESTACIONES</h3>
-            <p class="text-sm text-slate-800 leading-relaxed">La indemnización es la compensación económica que se debe pagar a un trabajador por la terminación de un contrato o relación de trabajo por despido sin causa justificada. Las prestaciones constituyen la compensación económica en materia de salario ordinario, aguinaldo, bono 14, bonificación incentivo, vacaciones, días de descanso y la afiliación al IGSS, siendo de carácter irrenunciable.</p>
-          </article>
-
-          <article class="p-5 rounded-lg border-2 border-rose-200 bg-rose-50 card" tabindex="0">
-            <h3 class="font-bold text-lg sm:text-xl text-rose-900 mb-3">LA ELECCIÓN DE ABOGADO</h3>
-            <p class="text-sm text-slate-800 leading-relaxed">Para la solución o tratamiento de su asunto, caso o problema legal, usted debe optar por la contratación de un Abogado y Notario de respetable trayectoria profesional, en consecuencia debe ser especializado en la rama del Derecho que se necesita hacer valer, debe mantener siempre informado a su cliente sobre su asunto, debe tener acceso a las redes sociales para una mejor comunicación, debe ser fácil de contactar y accesible.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACTO -->
-    <section id="contacto" class="max-w-6xl mx-auto px-3 sm:px-6 py-12 sm:py-16">
-      <h2 class="text-2xl sm:text-3xl font-bold text-teal-900 mb-6 sm:mb-8">CONTACTO</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
-        <div class="p-5 bg-white rounded-lg border-2 border-slate-200 shadow-sm">
-          <h3 class="font-bold text-lg sm:text-xl mb-4">Información de contacto</h3>
-          <div class="space-y-3 mb-6">
-            <p class="flex items-center gap-2">
-              <span class="text-2xl">📞</span>
-              <a href="tel:+50234044894" class="text-teal-700 hover:underline text-sm sm:text-base">3404-4894</a>
-            </p>
-            <p class="flex items-center gap-2">
-              <span class="text-2xl">💬</span>
-              <a href="https://wa.me/50234044894" target="_blank" rel="noopener noreferrer" class="text-teal-700 hover:underline text-sm sm:text-base">WhatsApp</a>
-            </p>
-            <p class="flex items-center gap-2">
-              <span class="text-2xl">💼</span>
-              <a href="https://www.linkedin.com/company/bufete-juridico-dieguez-lemus" target="_blank" rel="noopener noreferrer" class="text-teal-700 hover:underline text-sm sm:text-base">LinkedIn</a>
-            </p>
-            <p class="flex items-center gap-2">
-              <span class="text-2xl">👥</span>
-              <a href="https://www.facebook.com/Accesolegal" target="_blank" rel="noopener noreferrer" class="text-teal-700 hover:underline text-sm sm:text-base">Facebook</a>
-            </p>
-          </div>
-
-          <div class="mt-6 border-t pt-6">
-            <h4 class="font-bold text-base sm:text-lg mb-3">Envíenos un mensaje</h4>
-            <form id="contactForm" action="https://formspree.io/f/mldpavvd" method="POST" class="space-y-4">
-              <div>
-                <input name="nombre" lang="es" required placeholder="Nombre completo" class="w-full border-2 border-slate-300 rounded-lg px-4 py-2.5 focus:border-teal-500 focus:outline-none transition-colors text-sm sm:text-base" />
-                <p class="text-red-600 text-sm mt-1 hidden" id="nombreError">Por favor, ingrese su nombre completo.</p>
-              </div>
-              <div>
-                <input name="email" type="email" lang="es" required placeholder="Correo electrónico" class="w-full border-2 border-slate-300 rounded-lg px-4 py-2.5 focus:border-teal-500 focus:outline-none transition-colors text-sm sm:text-base" />
-                <p class="text-red-600 text-sm mt-1 hidden" id="emailError">Por favor, ingrese un correo electrónico válido.</p>
-              </div>
-              <div>
-                <textarea name="mensaje" lang="es" required placeholder="Su mensaje" rows="4" class="w-full border-2 border-slate-300 rounded-lg px-4 py-2.5 focus:border-teal-500 focus:outline-none transition-colors text-sm sm:text-base"></textarea>
-                <p class="text-red-600 text-sm mt-1 hidden" id="mensajeError">Por favor, ingrese su mensaje.</p>
-              </div>
-              <button type="submit" class="w-full bg-teal-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-teal-800 transition-colors text-sm sm:text-base">Enviar mensaje</button>
-            </form>
-            <p id="formSuccess" class="text-sm mt-2 text-teal-700 font-semibold hidden">✓ ¡Mensaje enviado con éxito! Nos pondremos en contacto pronto.</p>
-            <p id="formError" class="text-sm mt-2 text-red-600 font-semibold hidden">✗ Error al enviar el mensaje. Por favor, intenta de nuevo.</p>
-          </div>
-        </div>
-
-        <div class="p-5 bg-white rounded-lg border-2 border-slate-200 shadow-sm">
-          <h3 class="font-bold text-lg sm:text-xl mb-4">Ubicación</h3>
-          <p class="text-slate-800 mb-4 text-sm sm:text-base">📍 6 calle 4-17 zona 1, Edificio Tikal<br>Ciudad de Guatemala, Guatemala</p>
-          
-          <div class="map-container">
-            <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.9285648467727!2d-90.51583832414437!3d14.620879385928268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8589a30c85d5fd95%3A0x4d8f91d8c8f8f8f8!2s6%20Calle%204-17%2C%20Cdad.%20de%20Guatemala!5e0!3m2!1ses!2sgt!4v1697000000000!5m2!1ses!2sgt"
-              width="100%" 
-              height="100%" 
-              style="border:0;" 
-              allowfullscreen="" 
-              loading="lazy" 
-              referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-          </div>
-          
-          <a href="https://maps.app.goo.gl/cXAHj1AwF7jEjoqt5" target="_blank" rel="noopener noreferrer" class="inline-block mt-4 text-teal-700 hover:underline font-semibold text-sm sm:text-base">📍 Abrir en Google Maps</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- CÓMO LLEGAR -->
-    <section id="llegar" class="bg-white border-t py-12 sm:py-16">
-      <div class="max-w-6xl mx-auto px-3 sm:px-6">
-        <h2 class="text-2xl sm:text-3xl font-bold text-teal-900 mb-6">CÓMO LLEGAR</h2>
-        <div class="bg-teal-50 border-2 border-teal-200 rounded-lg p-5 mb-6">
-          <p class="text-slate-800 mb-4 text-sm sm:text-base">Para llegar a nuestras oficinas puede utilizar transporte público, taxi o aplicación de transporte. Si requiere indicaciones exactas, proporcione su punto de partida y con gusto le orientamos.</p>
-        </div>
-        
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
-          <div class="bg-white border-2 border-slate-200 rounded-lg p-5">
-            <h3 class="font-bold text-lg sm:text-xl mb-4 text-slate-900">Información de contacto</h3>
-            <ul class="space-y-3 text-slate-800 text-sm sm:text-base">
-              <li class="flex items-start gap-2">
-                <span class="text-xl">📞</span>
-                <div>
-                  <strong>Teléfono:</strong><br>
-                  <a href="tel:+50234044894" class="text-teal-700 hover:underline">3404-4894</a>
-                </div>
-              </li>
-              <li class="flex items-start gap-2">
-                <span class="text-xl">💬</span>
-                <div>
-                  <strong>WhatsApp:</strong><br>
-                  <a href="https://wa.me/50234044894" target="_blank" rel="noopener noreferrer" class="text-teal-700 hover:underline">Escríbenos por WhatsApp</a>
-                </div>
-              </li>
-              <li class="flex items-start gap-2">
-                <span class="text-xl">📍</span>
-                <div>
-                  <strong>Sede Central:</strong><br>
-                  6 calle 4-17 zona 1, Edificio Tikal<br>
-                  Municipio y Departamento de Guatemala
-                </div>
-              </li>
-            </ul>
-          </div>
-          
-          <div class="bg-gradient-to-br from-amber-50 to-amber-100 border-2 border-amber-300 rounded-lg p-5">
-            <h3 class="font-bold text-lg sm:text-xl mb-3 text-amber-900">🤝 Consulta Gratuita</h3>
-            <div class="space-y-2 text-slate-800 text-sm sm:text-base">
-              <p><strong>Consulta presencial sin costo</strong></p>
-              <p class="text-sm">📅 Todos los jueves</p>
-              <p class="text-sm">👥 Para personas de escasos recursos</p>
-              <p class="text-sm mt-3">Llame con anticipación para agendar su cita.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="bg-gradient-to-r from-teal-900 to-teal-800 text-white mt-12" role="contentinfo">
-    <div class="max-w-6xl mx-auto px-3 sm:px-6 py-8">
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8">
-        <div>
-          <div class="font-bold text-base sm:text-lg mb-2">Bufete Jurídico DIÉGUEZ, LEMUS &amp; Asociados</div>
-          <div class="text-sm text-teal-100">Protegiendo sus derechos y su patrimonio</div>
-        </div>
-
-        <div class="text-sm">
-          <h4 class="font-semibold mb-2 text-base">Contacto</h4>
-          <div class="space-y-1 text-teal-100">
-            <div>Tel: <a href="tel:+50234044894" class="underline hover:text-white">3404-4894</a></div>
-            <div>Email: <a href="mailto:licdieguez43@gmail.com" class="underline hover:text-white">licdieguez43@gmail.com</a></div>
-            <div>WhatsApp: <a href="https://wa.me/50234044894" target="_blank" rel="noopener noreferrer" class="underline hover:text-white">Enviar mensaje</a></div>
-            <div>Facebook: <a href="https://www.facebook.com/Accesolegal" target="_blank" rel="noopener noreferrer" class="underline hover:text-white">Visítanos en Facebook</a></div>
-          </div>
-        </div>
-
-        <div class="text-sm">
-          <h4 class="font-semibold mb-2 text-base">Horario</h4>
-          <div class="text-teal-100">
-            <div>Lunes - Viernes</div>
-            <div>8:30 AM - 3:30 PM</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="text-center text-xs bg-teal-950/50 py-4 border-t border-teal-700/30">
-      <p>&copy; <span id="year"></span> Bufete Jurídico DIÉGUEZ, LEMUS & Asociados. Todos los derechos reservados.</p>
-    </div>
-  </footer>
-
-  <!-- Back to Top Button -->
-  <button class="back-to-top" aria-label="Volver arriba" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M12 5v14M5 12l7-7 7 7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
-  </button>
-
-  <script>
-    // XLSX Processing Script
-    var gk_isXlsx = false;
-    var gk_xlsxFileLookup = {};
-    var gk_fileData = {};
-    function filledCell(cell) {
-      return cell !== '' && cell != null;
-    }
-    function loadFileData(filename) {
-      if (gk_isXlsx && gk_xlsxFileLookup[filename]) {
-        try {
-          var workbook = XLSX.read(gk_fileData[filename], { type: 'base64' });
-          var firstSheetName = workbook.SheetNames[0];
-          var worksheet = workbook.Sheets[firstSheetName];
-          var jsonData = XLSX.utils.sheet_to_json(worksheet, { header: 1, blankrows: false, defval: '' });
-          var filteredData = jsonData.filter(row => row.some(filledCell));
-          var headerRowIndex = filteredData.findIndex((row, index) =>
-            row.filter(filledCell).length >= filteredData[index + 1]?.filter(filledCell).length
-          );
-          if (headerRowIndex === -1 || headerRowIndex > 25) {
-            headerRowIndex = 0;
-          }
-          var csv = XLSX.utils.aoa_to_sheet(filteredData.slice(headerRowIndex));
-          csv = XLSX.utils.sheet_to_csv(csv, { header: 1 });
-          return csv;
-        } catch (e) {
-          console.error(e);
-          return "";
-        }
+<!-- HEADER -->
+<header class="bg-white shadow sticky top-0 z-40" role="banner">
+<div class="max-w-6xl mx-auto px-3 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-16">
+<a class="flex items-center gap-3 hover:opacity-80 transition-opacity" href="#inicio">
+<svg aria-labelledby="logoTitle logoDesc" height="56" loading="lazy" role="img" viewbox="0 0 64 64" width="56" xmlns="http://www.w3.org/2000/svg">
+<title id="logoTitle">Logo Bufete Jurídico</title>
+<desc id="logoDesc">Balanza de la justicia estilizada en dorado y fondo teal</desc>
+<defs>
+<lineargradient id="g1" x1="0" x2="1" y1="0" y2="1">
+<stop offset="0%" stop-color="#115e59"></stop>
+<stop offset="100%" stop-color="#0ea5a5"></stop>
+</lineargradient>
+<lineargradient id="gold" x1="0" x2="1" y1="0" y2="1">
+<stop offset="0%" stop-color="#f5c156"></stop>
+<stop offset="100%" stop-color="#d49a2c"></stop>
+</lineargradient>
+</defs>
+<rect fill="url(#g1)" height="64" rx="10" width="64" x="0" y="0"></rect>
+<rect fill="url(#gold)" height="24" opacity="0.95" rx="2" width="6" x="29" y="18"></rect>
+<rect fill="#083236" height="6" opacity="0.25" rx="3" width="24" x="20" y="40"></rect>
+<path d="M16 24h32" opacity="0.95" stroke="#f8f4e6" stroke-linecap="round" stroke-width="2.2"></path>
+<path d="M32 18c0-3.8 0-3.8 0-3.8" stroke="#f8f4e6" stroke-linecap="round" stroke-width="2"></path>
+<line stroke="#f8f4e6" stroke-linecap="round" stroke-width="1.6" x1="24" x2="24" y1="26" y2="34"></line>
+<line stroke="#f8f4e6" stroke-linecap="round" stroke-width="1.6" x1="40" x2="40" y1="26" y2="34"></line>
+<ellipse cx="24" cy="37.5" fill="#f8f4e6" opacity="0.95" rx="6.6" ry="2.8"></ellipse>
+<ellipse cx="40" cy="37.5" fill="#f8f4e6" opacity="0.95" rx="6.6" ry="2.8"></ellipse>
+<ellipse cx="32" cy="52" fill="#000" opacity="0.06" rx="18" ry="4.5"></ellipse>
+</svg>
+<div>
+<div class="text-xs text-slate-500">ABOGADOS Y NOTARIOS EN GUATEMALA</div>
+<div class="text-base sm:text-lg font-semibold">Bufete Jurídico</div>
+<div class="text-xs text-slate-500">DIÉGUEZ, LEMUS &amp; Asociados</div>
+</div>
+</a>
+<nav class="hidden md:flex items-center gap-4 text-sm text-slate-700" role="navigation">
+<a class="hover:text-teal-700 transition-colors py-2 px-3" href="#nosotros">Nosotros</a>
+<a class="hover:text-teal-700 transition-colors py-2 px-3" href="#servicios">Servicios</a>
+<a class="hover:text-teal-700 transition-colors py-2 px-3" href="#equipo">Equipo</a>
+<a class="hover:text-teal-700 transition-colors py-2 px-3" href="#blog">Blog</a>
+<a class="hover:text-teal-700 transition-colors py-2 px-3" href="#contacto">Contacto</a>
+<a class="hover:text-teal-700 transition-colors py-2 px-3" href="#llegar">Cómo llegar</a>
+</nav>
+<div class="md:hidden">
+<button aria-expanded="false" aria-label="Abrir menú" class="p-3 rounded-md hover:bg-slate-100 transition-colors" id="btn-mobile">
+<svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M4 6h16M4 12h16M4 18h16" stroke="#0f172a" stroke-linecap="round" stroke-width="1.5"></path></svg>
+</button>
+</div>
+</div>
+<div class="md:hidden hidden border-t bg-white absolute w-full z-50" id="mobile-menu" role="navigation">
+<div class="px-3 py-4 flex flex-col gap-3 text-base">
+<a class="block py-3 px-4 hover:text-teal-700 transition-colors rounded-md hover:bg-teal-50" href="#nosotros">Nosotros</a>
+<a class="block py-3 px-4 hover:text-teal-700 transition-colors rounded-md hover:bg-teal-50" href="#servicios">Servicios</a>
+<a class="block py-3 px-4 hover:text-teal-700 transition-colors rounded-md hover:bg-teal-50" href="#equipo">Equipo</a>
+<a class="block py-3 px-4 hover:text-teal-700 transition-colors rounded-md hover:bg-teal-50" href="#blog">Blog</a>
+<a class="block py-3 px-4 hover:text-teal-700 transition-colors rounded-md hover:bg-teal-50" href="#contacto">Contacto</a>
+<a class="block py-3 px-4 hover:text-teal-700 transition-colors rounded-md hover:bg-teal-50" href="#llegar">Cómo llegar</a>
+</div>
+</div>
+</div>
+</header>
+<!-- HERO -->
+<main id="inicio" role="main">
+<section class="hero-gradient text-white py-12 sm:py-16">
+<div class="max-w-6xl mx-auto px-3 sm:px-6 lg:px-8 grid sm:grid-cols-2 gap-6 items-center">
+<div>
+<h1 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold leading-tight">Bufete Jurídico DIÉGUEZ, LEMUS &amp; Asociados</h1>
+<p class="mt-4 text-base sm:text-lg text-teal-100">Asesoría legal integral en Derecho Civil, Penal, Laboral, Corporativo, Notarial y de Familia. Acompañamiento humano, honesto y personalizado.</p>
+<div class="mt-6 flex gap-4 flex-wrap">
+<a class="px-5 py-3 bg-white text-teal-800 rounded-md font-semibold hover:bg-teal-50 transition-colors min-w-[120px] text-center" href="#contacto">Contáctenos</a>
+<a class="px-5 py-3 border border-white/40 rounded-md hover:bg-white/10 transition-colors min-w-[120px] text-center" href="#servicios">Ver servicios</a>
+<a class="text-teal-700 hover:underline text-sm sm:text-base" href="https://www.facebook.com/Accesolegal" rel="noopener noreferrer" target="_blank">Síguenos en Facebook</a>
+</div>
+</div>
+<div class="bg-white/10 backdrop-blur-sm p-5 rounded-lg card border border-white/20" tabindex="0">
+<h3 class="text-white font-semibold text-base sm:text-lg">Horario de atención</h3>
+<p class="mt-3 text-teal-50 text-sm sm:text-base">📅 Lunes - Viernes: 8:30 - 15:30</p>
+<p class="mt-2 text-teal-50 text-sm sm:text-base">📞 Tel: <a class="underline hover:text-white transition-colors" href="tel:+50234044894">3404-4894</a></p>
+<p class="mt-2 text-teal-50 text-sm sm:text-base">💬 <a class="underline hover:text-white transition-colors" href="https://wa.me/50234044894" rel="noopener noreferrer" target="_blank">WhatsApp</a></p>
+</div>
+</div>
+</section>
+<!-- NOSOTROS -->
+<section class="max-w-6xl mx-auto px-3 sm:px-6 py-12 sm:py-16 section-bg-overlay" id="nosotros" style="background-image: url('https://images.unsplash.com/photo-1505664194779-8beaceb93744?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
+<h2 class="text-2xl sm:text-3xl font-bold mb-6 text-white">NOSOTROS</h2>
+<div class="prose max-w-none text-white leading-relaxed">
+<p class="text-base sm:text-lg">Somos un equipo de Profesionales de las Ciencias Jurídicas y Sociales, Abogados y Notarios egresados de la Facultad de Derecho de la Tricentenaria Universidad de San Carlos de Guatemala, con amplia trayectoria en las diferentes áreas del derecho penal, civil, laboral, corporativo, notarial y de familia. Brindamos asesoría jurídica y acompañamiento humano, honesto y personalizado, ya sea de forma individual o corporativa.</p>
+</div>
+</section>
+<!-- SERVICIOS -->
+<section class="py-12 sm:py-16 section-bg-overlay" id="servicios" style="background-image: url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
+<div class="max-w-6xl mx-auto px-3 sm:px-6">
+<h2 class="text-2xl sm:text-3xl font-bold text-white mb-6 sm:mb-8">SERVICIOS</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+<article class="p-5 rounded-lg border-2 border-blue-200 bg-gradient-to-br from-blue-50 to-blue-100 card" tabindex="0">
+<div class="text-3xl mb-3">⚖️</div>
+<h3 class="font-bold text-lg sm:text-xl text-blue-900 mb-3">Derecho Civil</h3>
+<p class="text-sm text-slate-800 leading-relaxed">Cobro judicial, desocupaciones, reclamos de propiedad, escrituras, contratos, herencias, legados, intestados, testamentarios, donaciones, obligaciones y más.</p>
+</article>
+<article class="p-5 rounded-lg border-2 border-green-200 bg-gradient-to-br from-green-50 to-green-100 card" tabindex="0">
+<div class="text-3xl mb-3">🛡️</div>
+<h3 class="font-bold text-lg sm:text-xl text-green-900 mb-3">Derecho Penal</h3>
+<p class="text-sm text-slate-800 leading-relaxed">Defensa en proceso penal, asesoría ante Juzgados, Tribunales y Ministerio Público, redención de penas, rehabilitación de antecedentes y más.</p>
+</article>
+<article class="p-5 rounded-lg border-2 border-yellow-200 bg-gradient-to-br from-yellow-50 to-yellow-100 card" tabindex="0">
+<div class="text-3xl mb-3">👨‍👩‍👧‍👦</div>
+<h3 class="font-bold text-lg sm:text-xl text-yellow-900 mb-3">Derecho de Familia</h3>
+<p class="text-sm text-slate-800 leading-relaxed">Divorcios, patrimonio conyugal, alimentos, custodia, filiación, matrimonio, unión de hecho, reconocimiento de hijos, relaciones familiares, patria potestad, violencia intrafamiliar, etc.</p>
+</article>
+<article class="p-5 rounded-lg border-2 border-purple-200 bg-gradient-to-br from-purple-50 to-purple-100 card" tabindex="0">
+<div class="text-3xl mb-3">🏢</div>
+<h3 class="font-bold text-lg sm:text-xl text-purple-900 mb-3">Derecho Corporativo</h3>
+<p class="text-sm text-slate-800 leading-relaxed">Constitución de Sociedades, asesoría y representación empresarial, empresas y contratos mercantiles, relaciones laborales, asociaciones, etc.</p>
+</article>
+<article class="p-5 rounded-lg border-2 border-pink-200 bg-gradient-to-br from-pink-50 to-pink-100 card" tabindex="0">
+<div class="text-3xl mb-3">💼</div>
+<h3 class="font-bold text-lg sm:text-xl text-pink-900 mb-3">Derecho Laboral</h3>
+<p class="text-sm text-slate-800 leading-relaxed">Asesoría por denuncia y cobro de indemnización y prestaciones, juicio por despido injustificado, pensiones, jubilaciones, incidentes post mortem y previsión social.</p>
+</article>
+<article class="p-5 rounded-lg border-2 border-teal-200 bg-gradient-to-br from-teal-50 to-teal-100 card" tabindex="0">
+<div class="text-3xl mb-3">🤝</div>
+<h3 class="font-bold text-lg sm:text-xl text-teal-900 mb-3">Gestiones Alternativas</h3>
+<p class="text-sm text-slate-800 leading-relaxed">Gestiones extrajudiciales, orientación legal, diagnóstico jurídico, solución de conflictos, mediaciones, defensa y representación judicial, impugnaciones, amparos, exhibición personal.</p>
+</article>
+</div>
+</div>
+</section>
+<!-- EQUIPO -->
+<section class="max-w-6xl mx-auto px-3 sm:px-6 py-12 sm:py-16 section-bg-overlay" id="equipo" style="background-image: url('https://images.unsplash.com/photo-1556761175-4b46a572b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
+<h2 class="text-2xl sm:text-3xl font-bold text-white mb-6 sm:mb-8">NUESTRO EQUIPO</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 sm:gap-6">
+<div class="p-5 rounded-lg border-2 border-slate-200 bg-white card shadow-sm" tabindex="0">
+<div class="flex items-start gap-4 min-w-0">
+<div class="w-16 h-16 bg-teal-600 rounded-full flex items-center justify-center text-white text-xl sm:text-2xl font-bold flex-shrink-0">AD</div>
+<div class="flex-1 min-w-0">
+<h4 class="font-bold text-base sm:text-lg text-slate-900 truncate">Lic. Arnulfo Diéguez</h4>
+<p class="text-sm text-slate-600 font-semibold mt-1">Abogado y Notario</p>
+<p class="text-sm text-teal-700 font-semibold mt-1">Colegiado activo Nº 11,340</p>
+<p class="text-sm text-slate-600 mt-2">Especialización: Derecho Civil y Procesal Civil y Mercantil • Más de 15 años de ejercicio profesional</p>
+<div class="mt-4 space-y-1 text-sm">
+<p>📧 <a class="text-teal-700 hover:underline" href="mailto:licdieguez43@gmail.com">licdieguez43@gmail.com</a></p>
+<p>📱 <a class="text-teal-700 hover:underline" href="tel:+50249380267">4938-0267</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="p-5 rounded-lg border-2 border-amber-200 bg-amber-50 card shadow-sm" tabindex="0">
+<div class="flex items-start gap-4 min-w-0">
+<div class="w-16 h-16 bg-amber-600 rounded-full flex items-center justify-center text-white text-xl sm:text-2xl font-bold flex-shrink-0">AL</div>
+<div class="flex-1 min-w-0">
+<h4 class="font-bold text-base sm:text-lg text-slate-900 truncate">Lic. Alfredo Lemus</h4>
+<p class="text-sm text-slate-600 font-semibold mt-1">Abogado y Notario</p>
+<p class="text-sm text-amber-700 font-semibold mt-1">Colegiado activo Nº 11,318</p>
+<p class="text-sm text-slate-600 mt-2">Especialización: Derecho Notarial y Jurisdicción Voluntaria • Más de 15 años de ejercicio profesional</p>
+<div class="mt-4 space-y-1 text-sm">
+<p>📧 <a class="text-amber-700 hover:underline" href="mailto:licjalemus63@gmail.com">licjalemus63@gmail.com</a></p>
+<p>📱 <a class="text-amber-700 hover:underline" href="tel:+50255972975">5597-2975</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="p-5 rounded-lg border-2 border-emerald-200 bg-emerald-50 card shadow-sm" tabindex="0">
+<div class="flex items-start gap-4 min-w-0">
+<div class="w-16 h-16 bg-emerald-600 rounded-full flex items-center justify-center text-white text-xl sm:text-2xl font-bold flex-shrink-0">RP</div>
+<div class="flex-1 min-w-0">
+<h4 class="font-bold text-base sm:text-lg text-slate-900 truncate">Licda. Rosalva Pajoc González</h4>
+<p class="text-sm text-slate-600 font-semibold mt-1">Abogada y Notaria</p>
+<p class="text-sm text-emerald-700 font-semibold mt-1">Colegiada activa Nº 11,899</p>
+<p class="text-sm text-slate-600 mt-2">Especialización: Derecho Penal • Más de 12 años de ejercicio profesional</p>
+<div class="mt-4 space-y-1 text-sm">
+<p>📧 <a class="text-emerald-700 hover:underline" href="mailto:nuevavidars@gmail.com">nuevavidars@gmail.com</a></p>
+<p>📱 <a class="text-emerald-700 hover:underline" href="tel:+50242846646">4284-6646</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="p-5 rounded-lg border-2 border-rose-200 bg-rose-50 card shadow-sm" tabindex="0">
+<div class="flex items-start gap-4 min-w-0">
+<div class="w-16 h-16 bg-rose-600 rounded-full flex items-center justify-center text-white text-xl sm:text-2xl font-bold flex-shrink-0">EB</div>
+<div class="flex-1 min-w-0">
+<h4 class="font-bold text-base sm:text-lg text-slate-900 truncate">Lic. Erick Salvador Barillas</h4>
+<p class="text-sm text-slate-600 font-semibold mt-1">Abogado y Notario</p>
+<p class="text-sm text-rose-700 font-semibold mt-1">Colegiado activo Nº 18,034</p>
+<p class="text-sm text-slate-600 mt-2">Especialización: Derecho de Familia e impugnaciones • 12 años de ejercicio profesional</p>
+<div class="mt-4 space-y-1 text-sm">
+<p>📧 <a class="text-rose-700 hover:underline" href="mailto:lic.barillas46@gmail.com">lic.barillas46@gmail.com</a></p>
+<p>📱 <a class="text-rose-700 hover:underline" href="tel:+50234950705">3495-0705</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- BLOG -->
+<section class="py-12 sm:py-16 section-bg-overlay" id="blog" style="background-image: url('https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
+<div class="max-w-6xl mx-auto px-3 sm:px-6">
+<h2 class="text-2xl sm:text-3xl font-bold text-white mb-6 sm:mb-8">BLOG</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+<article class="p-5 rounded-lg border-2 border-blue-200 bg-blue-50 card" tabindex="0">
+<h3 class="font-bold text-lg sm:text-xl text-blue-900 mb-3">LA PROPIEDAD Y LA SUCESIÓN</h3>
+<p class="text-sm text-slate-800 leading-relaxed">La propiedad es el derecho que una persona tiene para poseer, usar, gozar, disfrutar y disponer de un bien de acuerdo con la ley. La sucesión hereditaria es el proceso legal de transmisión de bienes, derechos y obligaciones de una persona fallecida a sus herederos, basado en la voluntad del testador (sucesión testamentaria) o en la ley (sucesión intestada).</p>
+</article>
+<article class="p-5 rounded-lg border-2 border-orange-200 bg-orange-50 card" tabindex="0">
+<h3 class="font-bold text-lg sm:text-xl text-orange-900 mb-3">EL DIVORCIO Y LA SEPARACIÓN</h3>
+<p class="text-sm text-slate-800 leading-relaxed">El divorcio es la disolución del vínculo matrimonial. La separación es la interrupción de hecho de la relación conyugal. Pueden ser de MUTUO ACUERDO; los cónyuges lo consienten y colaboran en su trámite judicial hasta la sentencia y CONTENCIOSO EN JUICIO ORAL; uno de los cónyuges promueve su trámite judicial hasta obtener la sentencia, en base a las causales dispuestas en el Artículo 155 del Código Civil.</p>
+</article>
+<article class="p-5 rounded-lg border-2 border-amber-200 bg-amber-50 card" tabindex="0">
+<h3 class="font-bold text-lg sm:text-xl text-amber-900 mb-3">LOS ALIMENTOS Y LA VIOLENCIA INTRAFAMILIAR</h3>
+<p class="text-sm text-slate-800 leading-relaxed">Los alimentos son todo lo indispensable para el sustento, habitación, vestido, asistencia médica y la educación e instrucción del alimentista. En el JUICIO DE ALIMENTOS se establece su fijación, su aumento o disminución. La violencia intrafamiliar es toda acción u omisión cometida por algún miembro de la familia en relación de poder, sin importar el espacio físico donde ocurra, que perjudique el bienestar, la integridad física, psicológica, la libertad o el derecho de otro miembro de la familia.</p>
+</article>
+<article class="p-5 rounded-lg border-2 border-violet-200 bg-violet-50 card" tabindex="0">
+<h3 class="font-bold text-lg sm:text-xl text-violet-900 mb-3">LA APREHENSIÓN Y EL PROCESO PENAL</h3>
+<p class="text-sm text-slate-800 leading-relaxed">La aprehensión es el acto legal que limita la libertad de locomoción de una persona al vincularla con un ilícito penal, con el fin de ponerlo a disposición de la justicia para la continuación del posible proceso penal. El proceso penal es el procedimiento por el cual se investigan hechos delictivos, se determina la participación y responsabilidad del sindicado mediante la desjudicialización o las etapas conocidas como preparatoria, intermedia y de juicio.</p>
+</article>
+<article class="p-5 rounded-lg border-2 border-emerald-200 bg-emerald-50 card" tabindex="0">
+<h3 class="font-bold text-lg sm:text-xl text-emerald-900 mb-3">LA INDEMNIZACIÓN Y LAS PRESTACIONES</h3>
+<p class="text-sm text-slate-800 leading-relaxed">La indemnización es la compensación económica que se debe pagar a un trabajador por la terminación de un contrato o relación de trabajo por despido sin causa justificada. Las prestaciones constituyen la compensación económica en materia de salario ordinario, aguinaldo, bono 14, bonificación incentivo, vacaciones, días de descanso y la afiliación al IGSS, siendo de carácter irrenunciable.</p>
+</article>
+<article class="p-5 rounded-lg border-2 border-rose-200 bg-rose-50 card" tabindex="0">
+<h3 class="font-bold text-lg sm:text-xl text-rose-900 mb-3">LA ELECCIÓN DE ABOGADO</h3>
+<p class="text-sm text-slate-800 leading-relaxed">Para la solución o tratamiento de su asunto, caso o problema legal, usted debe optar por la contratación de un Abogado y Notario de respetable trayectoria profesional, en consecuencia debe ser especializado en la rama del Derecho que se necesita hacer valer, debe mantener siempre informado a su cliente sobre su asunto, debe tener acceso a las redes sociales para una mejor comunicación, debe ser fácil de contactar y accesible.</p>
+</article>
+</div>
+</div>
+</section>
+<!-- CONTACTO -->
+<section class="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-16 section-bg-overlay" id="contacto" style="background-image: url('https://images.unsplash.com/photo-1517502884422-41eaead166d4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
+<div class="max-w-6xl mx-auto px-4 sm:px-6">
+<h2 class="text-3xl sm:text-4xl font-bold text-white mb-8 sm:mb-10">CONTÁCTENOS</h2>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
+<div class="p-6 bg-white rounded-xl border border-slate-200 shadow-lg">
+<h3 class="font-bold text-xl sm:text-2xl text-slate-900 mb-6">Información de Contacto</h3>
+<div class="space-y-4 text-slate-800 text-base sm:text-lg">
+<p class="flex items-center gap-3">
+<span class="text-2xl">📞</span>
+<a class="text-teal-800 hover:text-teal-600 transition-colors" href="tel:+50234044894">+502 3404-4894</a>
+</p>
+<p class="flex items-center gap-3">
+<span class="text-2xl">💬</span>
+<a class="text-teal-800 hover:text-teal-600 transition-colors" href="https://wa.me/50234044894" rel="noopener noreferrer" target="_blank">WhatsApp</a>
+</p>
+<p class="flex items-center gap-3">
+<span class="text-2xl">💼</span>
+<a class="text-teal-800 hover:text-teal-600 transition-colors" href="https://www.linkedin.com/company/bufete-juridico-dieguez-lemus" rel="noopener noreferrer" target="_blank">LinkedIn</a>
+</p>
+<p class="flex items-center gap-3">
+<span class="text-2xl">👥</span>
+<a class="text-teal-800 hover:text-teal-600 transition-colors" href="https://www.facebook.com/Accesolegal" rel="noopener noreferrer" target="_blank">Facebook</a>
+</p>
+</div>
+</div>
+<div class="p-6 bg-white rounded-xl border border-slate-200 shadow-lg">
+<h3 class="font-bold text-xl sm:text-2xl text-slate-900 mb-6">Envíenos un Mensaje</h3>
+<form action="https://formspree.io/f/mldpavvd" class="space-y-6 contact-form" id="contactForm" method="POST">
+<div>
+<label for="nombre" class="text-sm sm:text-base">Nombre Completo</label>
+<input class="w-full border border-slate-300 rounded-lg px-4 py-3 focus:border-teal-600 focus:outline-none transition-colors text-sm sm:text-base" id="nombre" name="nombre" placeholder="Ingrese su nombre completo" required=""/>
+<p class="text-red-600 text-sm mt-2 hidden" id="nombreError">Por favor, ingrese su nombre completo.</p>
+</div>
+<div>
+<label for="email" class="text-sm sm:text-base">Correo Electrónico</label>
+<input class="w-full border border-slate-300 rounded-lg px-4 py-3 focus:border-teal-600 focus:outline-none transition-colors text-sm sm:text-base" id="email" name="email" placeholder="Ingrese su correo electrónico" required="" type="email"/>
+<p class="text-red-600 text-sm mt-2 hidden" id="emailError">Por favor, ingrese un correo electrónico válido.</p>
+</div>
+<div>
+<label for="mensaje" class="text-sm sm:text-base">Mensaje</label>
+<textarea class="w-full border border-slate-300 rounded-lg px-4 py-3 focus:border-teal-600 focus:outline-none transition-colors text-sm sm:text-base" id="mensaje" name="mensaje" placeholder="Escriba su mensaje aquí" required="" rows="5"></textarea>
+<p class="text-red-600 text-sm mt-2 hidden" id="mensajeError">Por favor, ingrese su mensaje.</p>
+</div>
+<button class="w-full bg-teal-700 text-white px-6 py-3 rounded-lg font-semibold text-base sm:text-lg hover:bg-teal-800 transition-colors" type="submit">Enviar Mensaje</button>
+<p class="text-sm text-teal-700 font-semibold hidden mt-4" id="formSuccess">✓ ¡Mensaje enviado con éxito! Nos pondremos en contacto pronto.</p>
+<p class="text-sm text-red-600 font-semibold hidden mt-4" id="formError">✗ Error al enviar el mensaje. Por favor, intenta de nuevo.</p>
+</form>
+</div>
+</div>
+<div class="mt-8 p-6 bg-white rounded-xl border border-slate-200 shadow-lg">
+<h3 class="font-bold text-xl sm:text-2xl text-slate-900 mb-6">Ubicación</h3>
+<p class="text-slate-800 mb-4 text-base sm:text-lg">📍 6 calle 4-17 zona 1, Edificio Tikal, Ciudad de Guatemala, Guatemala</p>
+<div class="map-container">
+<iframe allowfullscreen="" height="100%" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.9285648467727!2d-90.51583832414437!3d14.620879385928268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8589a30c85d5fd95%3A0x4d8f91d8c8f8f8f8!2s6%20Calle%204-17%2C%20Cdad.%20de%20Guatemala!5e0!3m2!1ses!2sgt!4v1697000000000!5m2!1ses!2sgt" style="border:0;" width="100%">
+</iframe>
+</div>
+<a class="inline-block mt-4 text-teal-800 hover:text-teal-600 font-semibold text-base sm:text-lg transition-colors" href="https://maps.app.goo.gl/cXAHj1AwF7jEjoqt5" rel="noopener noreferrer" target="_blank">📍 Abrir en Google Maps</a>
+</div>
+</div>
+</section>
+<!-- CÓMO LLEGAR -->
+<section class="py-12 sm:py-16 section-bg-overlay" id="llegar" style="background-image: url('https://images.unsplash.com/photo-1528183429752-a97d9059f8ad?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
+<div class="max-w-6xl mx-auto px-3 sm:px-6">
+<h2 class="text-2xl sm:text-3xl font-bold text-white mb-6">CÓMO LLEGAR</h2>
+<div class="bg-teal-50 border-2 border-teal-200 rounded-lg p-5 mb-6">
+<p class="text-slate-800 mb-4 text-sm sm:text-base">Para llegar a nuestras oficinas puede utilizar transporte público, taxi o aplicación de transporte. Si requiere indicaciones exactas, proporcione su punto de partida y con gusto le orientamos.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+<div class="bg-white border-2 border-slate-200 rounded-lg p-5">
+<h3 class="font-bold text-lg sm:text-xl mb-4 text-slate-900">Información de contacto</h3>
+<ul class="space-y-3 text-slate-800 text-sm sm:text-base">
+<li class="flex items-start gap-2">
+<span class="text-xl">📞</span>
+<div>
+<strong>Teléfono:</strong><br/>
+<a class="text-teal-700 hover:underline" href="tel:+50234044894">3404-4894</a>
+</div>
+</li>
+<li class="flex items-start gap-2">
+<span class="text-xl">💬</span>
+<div>
+<strong>WhatsApp:</strong><br/>
+<a class="text-teal-700 hover:underline" href="https://wa.me/50234044894" rel="noopener noreferrer" target="_blank">Escríbenos por WhatsApp</a>
+</div>
+</li>
+<li class="flex items-start gap-2">
+<span class="text-xl">📍</span>
+<div>
+<strong>Sede Central:</strong><br/>
+6 calle 4-17 zona 1, Edificio Tikal<br/>
+Municipio y Departamento de Guatemala
+</div>
+</li>
+</ul>
+</div>
+<div class="bg-gradient-to-br from-amber-50 to-amber-100 border-2 border-amber-300 rounded-lg p-5">
+<h3 class="font-bold text-lg sm:text-xl mb-3 text-amber-900">🤝 Consulta Gratuita</h3>
+<div class="space-y-2 text-slate-800 text-sm sm:text-base">
+<p><strong>Consulta presencial sin costo</strong></p>
+<p class="text-sm">📅 Todos los jueves</p>
+<p class="text-sm">👥 Para personas de escasos recursos</p>
+<p class="text-sm mt-3">Llame con anticipación para agendar su cita.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- FOOTER -->
+<footer class="bg-gradient-to-r from-teal-900 to-teal-800 text-white mt-12" role="contentinfo">
+<div class="max-w-6xl mx-auto px-3 sm:px-6 py-8">
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8">
+<div>
+<div class="font-bold text-base sm:text-lg mb-2">Bufete Jurídico DIÉGUEZ, LEMUS &amp; Asociados</div>
+<div class="text-sm text-teal-100">Protegiendo sus derechos y su patrimonio</div>
+</div>
+<div class="text-sm">
+<h4 class="font-semibold mb-2 text-base">Contacto</h4>
+<div class="space-y-1 text-teal-100">
+<div>Tel: <a class="underline hover:text-white" href="tel:+50234044894">3404-4894</a></div>
+<div>Email: <a class="underline hover:text-white" href="mailto:licdieguez43@gmail.com">licdieguez43@gmail.com</a></div>
+<div>WhatsApp: <a class="underline hover:text-white" href="https://wa.me/50234044894" rel="noopener noreferrer" target="_blank">Enviar mensaje</a></div>
+<div>Facebook: <a class="underline hover:text-white" href="https://www.facebook.com/Accesolegal" rel="noopener noreferrer" target="_blank">Visítanos en Facebook</a></div>
+</div>
+</div>
+<div class="text-sm">
+<h4 class="font-semibold mb-2 text-base">Horario</h4>
+<div class="text-teal-100">
+<div>Lunes - Viernes</div>
+<div>8:30 AM - 3:30 PM</div>
+</div>
+</div>
+</div>
+</div>
+<div class="text-center text-xs bg-teal-950/50 py-4 border-t border-teal-700/30">
+<p>© <span id="year"></span> Bufete Jurídico DIÉGUEZ, LEMUS &amp; Asociados. Todos los derechos reservados.</p>
+</div>
+</footer>
+<!-- Botón de Volver Arriba -->
+<button aria-label="Volver arriba" class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+<svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 5v14M5 12l7-7 7 7" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+<script>
+    // Alternar menú móvil
+    document.addEventListener('DOMContentLoaded', () => {
+      const btn = document.getElementById('btn-mobile');
+      const mobileMenu = document.getElementById('mobile-menu');
+      if (!btn || !mobileMenu) {
+        console.error('Error: No se encontraron btn-mobile o mobile-menu');
+        return;
       }
-      return gk_fileData[filename] || "";
-    }
 
-    // Mobile menu toggle
-    const btn = document.getElementById('btn-mobile');
-    const mobileMenu = document.getElementById('mobile-menu');
-    if (btn && mobileMenu) {
-      btn.addEventListener('click', () => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
         mobileMenu.classList.toggle('hidden');
-        btn.setAttribute('aria-expanded', mobileMenu.classList.contains('hidden') ? 'false' : 'true');
+        const isOpen = !mobileMenu.classList.contains('hidden');
+        btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        console.log('Menú móvil toggled:', isOpen ? 'abierto' : 'cerrado');
       });
 
-      // Close menu on outside click
+      // Cerrar menú al hacer clic fuera
       document.addEventListener('click', (e) => {
         if (!mobileMenu.contains(e.target) && !btn.contains(e.target)) {
           mobileMenu.classList.add('hidden');
           btn.setAttribute('aria-expanded', 'false');
+          console.log('Menú móvil cerrado por clic fuera');
         }
       });
 
-      // Close menu on Escape key
+      // Cerrar menú con la tecla Escape
       document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape' && !mobileMenu.classList.contains('hidden')) {
           mobileMenu.classList.add('hidden');
           btn.setAttribute('aria-expanded', 'false');
+          console.log('Menú móvil cerrado por tecla Escape');
         }
       });
-    }
 
-    // Close mobile menu when clicking on a link
-    document.querySelectorAll('#mobile-menu a').forEach(link => {
-      link.addEventListener('click', () => {
-        if (mobileMenu) mobileMenu.classList.add('hidden');
-        if (btn) btn.setAttribute('aria-expanded', 'false');
-      });
-    });
-
-    // Smooth scroll for internal links
-    document.querySelectorAll('a[href^="#"]').forEach(a => {
-      a.addEventListener('click', function(e){
-        const href = this.getAttribute('href');
-        if (href && href.startsWith('#') && href.length > 1){
-          e.preventDefault();
-          const el = document.querySelector(href);
-          if (el) {
-            el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            window.scrollBy(0, -80);
-          }
-          if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
-            mobileMenu.classList.add('hidden');
-            if (btn) btn.setAttribute('aria-expanded', 'false');
-          }
-        }
-      });
-    });
-
-    // Contact form submission with Formspree
-    function submitContact(e) {
-      e.preventDefault();
-      const form = e.target;
-      const nombre = form.nombre.value.trim();
-      const email = form.email.value.trim();
-      const mensaje = form.mensaje.value.trim();
-      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-      // Reset feedback messages
-      const successMsg = document.getElementById('formSuccess');
-      const errorMsg = document.getElementById('formError');
-      const nombreError = document.getElementById('nombreError');
-      const emailError = document.getElementById('emailError');
-      const mensajeError = document.getElementById('mensajeError');
-      successMsg.classList.add('hidden');
-      errorMsg.classList.add('hidden');
-      nombreError.classList.add('hidden');
-      emailError.classList.add('hidden');
-      mensajeError.classList.add('hidden');
-
-      let isValid = true;
-
-      if (!nombre) {
-        nombreError.classList.remove('hidden');
-        isValid = false;
-      }
-      if (!email || !emailRegex.test(email)) {
-        emailError.classList.remove('hidden');
-        isValid = false;
-      }
-      if (!mensaje) {
-        mensajeError.classList.remove('hidden');
-        isValid = false;
-      }
-
-      if (isValid) {
-        const formData = new FormData(form);
-        fetch(form.action, {
-          method: 'POST',
-          body: formData,
-          headers: {
-            'Accept': 'application/json'
-          }
-        })
-        .then(response => {
-          if (response.ok) {
-            successMsg.classList.remove('hidden');
-            form.reset();
-            setTimeout(() => successMsg.classList.add('hidden'), 5000);
-          } else {
-            errorMsg.classList.remove('hidden');
-            setTimeout(() => errorMsg.classList.add('hidden'), 5000);
-          }
-        })
-        .catch(() => {
-          errorMsg.classList.remove('hidden');
-          setTimeout(() => errorMsg.classList.add('hidden'), 5000);
+      // Cerrar menú móvil al hacer clic en un enlace
+      document.querySelectorAll('#mobile-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+          btn.setAttribute('aria-expanded', 'false');
+          console.log('Menú móvil cerrado por clic en enlace');
         });
-      }
-    }
+      });
 
-    // Set current year
-    document.addEventListener('DOMContentLoaded', () => {
+      // Desplazamiento suave para enlaces internos
+      document.querySelectorAll('a[href^="#"]').forEach(a => {
+        a.addEventListener('click', function(e) {
+          const href = this.getAttribute('href');
+          if (href && href.startsWith('#') && href.length > 1) {
+            e.preventDefault();
+            const el = document.querySelector(href);
+            if (el) {
+              el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              window.scrollBy(0, -80); // Ajuste para el encabezado fijo
+              console.log(`Desplazamiento a sección: ${href}`);
+            } else {
+              console.warn(`Sección no encontrada: ${href}`);
+            }
+            if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+              mobileMenu.classList.add('hidden');
+              btn.setAttribute('aria-expanded', 'false');
+            }
+          }
+        });
+      });
+
+      // Resaltar enlace activo en la navegación
+      window.addEventListener('scroll', () => {
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('nav a[href^="#"], #mobile-menu a[href^="#"]');
+        let current = '';
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop;
+          if (window.scrollY >= sectionTop - 100) {
+            current = section.getAttribute('id');
+          }
+        });
+        navLinks.forEach(link => {
+          link.classList.remove('text-teal-700', 'font-semibold');
+          if (link.getAttribute('href') === `#${current}`) {
+            link.classList.add('text-teal-700', 'font-semibold');
+          }
+        });
+      });
+
+      // Actualizar año en el footer
       const yearEl = document.getElementById('year');
-      if (yearEl) yearEl.textContent = new Date().getFullYear();
+      if (yearEl) {
+        yearEl.textContent = new Date().getFullYear();
+      }
 
-      // Accessibility: keyboard navigation for cards
+      // Accesibilidad: navegación por teclado para tarjetas
       document.querySelectorAll('.card').forEach(card => {
         card.addEventListener('keypress', (e) => {
           if (e.key === 'Enter' || e.key === ' ') {
@@ -719,7 +681,7 @@
         });
       });
 
-      // Back to Top button visibility
+      // Visibilidad del botón de volver arriba
       const backToTop = document.querySelector('.back-to-top');
       window.addEventListener('scroll', () => {
         if (window.scrollY > 300) {
@@ -728,29 +690,82 @@
           backToTop.classList.remove('show');
         }
       });
-    });
 
-    // Add active state to navigation
-    window.addEventListener('scroll', () => {
-      const sections = document.querySelectorAll('section[id]');
-      const navLinks = document.querySelectorAll('nav a[href^="#"]');
-      
-      let current = '';
-      sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
-        if (scrollY >= sectionTop - 100) {
-          current = section.getAttribute('id');
+      // Verificar carga de imágenes de fondo
+      document.querySelectorAll('.section-bg-overlay').forEach(section => {
+        const bgImage = section.style.backgroundImage;
+        if (bgImage) {
+          const img = new Image();
+          img.src = bgImage.slice(5, -2);
+          img.onload = () => console.log(`Imagen cargada: ${img.src}`);
+          img.onerror = () => {
+            console.warn(`Error al cargar imagen: ${img.src}`);
+            section.classList.add('no-bg');
+          };
         }
       });
 
-      navLinks.forEach(link => {
-        link.classList.remove('text-teal-700', 'font-semibold');
-        if (link.getAttribute('href') === `#${current}`) {
-          link.classList.add('text-teal-700', 'font-semibold');
-        }
-      });
+      // Envío de formulario de contacto con Formspree
+      const contactForm = document.getElementById('contactForm');
+      if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          const form = e.target;
+          const nombre = form.nombre.value.trim();
+          const email = form.email.value.trim();
+          const mensaje = form.mensaje.value.trim();
+          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+          const successMsg = document.getElementById('formSuccess');
+          const errorMsg = document.getElementById('formError');
+          const nombreError = document.getElementById('nombreError');
+          const emailError = document.getElementById('emailError');
+          const mensajeError = document.getElementById('mensajeError');
+          successMsg.classList.add('hidden');
+          errorMsg.classList.add('hidden');
+          nombreError.classList.add('hidden');
+          emailError.classList.add('hidden');
+          mensajeError.classList.add('hidden');
+
+          let isValid = true;
+          if (!nombre) {
+            nombreError.classList.remove('hidden');
+            isValid = false;
+          }
+          if (!email || !emailRegex.test(email)) {
+            emailError.classList.remove('hidden');
+            isValid = false;
+          }
+          if (!mensaje) {
+            mensajeError.classList.remove('hidden');
+            isValid = false;
+          }
+
+          if (isValid) {
+            const formData = new FormData(form);
+            fetch(form.action, {
+              method: 'POST',
+              body: formData,
+              headers: { 'Accept': 'application/json' }
+            })
+            .then(response => {
+              if (response.ok) {
+                successMsg.classList.remove('hidden');
+                form.reset();
+                setTimeout(() => successMsg.classList.add('hidden'), 5000);
+              } else {
+                errorMsg.classList.remove('hidden');
+                setTimeout(() => errorMsg.classList.add('hidden'), 5000);
+              }
+            })
+            .catch(() => {
+              errorMsg.classList.remove('hidden');
+              setTimeout(() => errorMsg.classList.add('hidden'), 5000);
+            });
+          }
+        });
+      }
     });
-  </script>
+</script>
 </body>
 </html>
